@@ -6,6 +6,7 @@ function findBookById(books, id) {
   return books.find((book) => book.id == id)
 }
 
+//helper function 
 const isBookReturned = ({ borrows }) => borrows[0].returned
 
 function partitionBooksByBorrowedStatus(books) {

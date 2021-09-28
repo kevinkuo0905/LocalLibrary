@@ -29,6 +29,7 @@ function getMostCommonGenres(books) {
   return result.slice(0, 5)
 }
 
+//helper function
 const getTotalBookBorrows = ({ borrows }) => {
   return borrows.reduce((sum, borrow) => sum + !!borrow, 0)
 }
